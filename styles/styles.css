@@ -1,7 +1,21 @@
+:root {
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --white-font-color: #ffffff;
+  --accent-color: #2196f3;
+  --dark-background-color: #2f303a;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  color: #212121;
+  color: var(--primary-text-color);
+  background-color: var(--primary-background-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
+
 /* header */
 
 .logo {
@@ -13,9 +27,8 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  line-height: 1.2;
+  color: var(--accent-color);
 }
 
 .link {
@@ -31,33 +44,31 @@ a {
 }
 
 .nav-link {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
-}
-
-.contacts {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.contacts {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
 }
 
 .contacts:hover,
 .contacts:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 ul {
@@ -67,171 +78,182 @@ ul {
 /* head secction */
 
 .head-block {
-  background: #2f303a;
+  background: var(--dark-background-color);
 }
 
-h1 {
-  font-family: 'Roboto';
+.head-title {
   font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-font-color);
 }
 
 .head-button {
-  width: 216px;
-  height: 50px;
-  background: #2196f3;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.head-button:hover,
+.head-button:focus {
+  background-color: #188ce8;
+  color: var(--white-font-color);
 }
 
 .hide {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantage {
-  background: #f5f5f5;
+  background: var(--primary-background-color);
 }
 
 .advantage-list h3 {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
+  line-height: 1.14;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .advantage-list p {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.71;
+  color: var(--secondary-text-color);
 }
 
 .work {
-  background: #f5f5f5;
+  background-color: var(--primary-background-color);
 }
 
 .work-title {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .team {
-  background: #f5f4fa;
+  background-color: var(--secondary-background-color);
 }
 
 .team-title {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .team h3 {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #212121;
+  line-height: 1.19;
+  color: var(--primary-text-color);
 }
 .team p {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.team li {
-  background-color: #ffffff;
+  line-height: 1.19;
+  color: var(--secondary-text-color);
 }
 
 /* footer */
 
 footer {
-  background: #2f303a;
+  background: var(--dark-background-color);
 }
 
 .location {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+  line-height: 1.71;
+
+  color: var(--white-font-color);
 }
 
 .location:hover,
 .location:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--white-font-color);
 }
 
 /* portfolio */
 
-.buttons {
-  background-color: #f5f5f5;
+.portfolio {
+  background: var(--primary-background-color);
 }
 
-button {
-  width: 112px;
-  height: 38px;
-  left: 726px;
-  top: 174px;
-  background: #f5f4fa;
+.portfolio-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.portfolio-button {
+  font-family: inherit;
+  background-color: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-button:hover,
-button:focus {
-  background: #2196f3;
+.portfolio-button:hover,
+.portfolio-button:focus {
+  background-color: var(--accent-color);
+  color: var(--white-font-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .buttons-list li {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
-.portfolio {
-  background: #f5f5f5;
+  line-height: 1.62;
+  color: var(--primary-text-color);
 }
 
 .portfolio-list li {
@@ -245,21 +267,18 @@ button:focus {
 }
 
 .portfolio-list h2 {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 
 .portfolio-list p {
-  font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
-  letter-spacing: 0.03em;
-  color: #757575;
+  line-height: 1.87;
+  color: var(--secondary-text-color);
 }
