@@ -57,6 +57,10 @@ a {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
+
 .contacts {
   font-style: normal;
   font-weight: 500;
@@ -213,6 +217,10 @@ footer {
 
 .portfolio {
   background: var(--primary-background-color);
+}
+
+.current-portfolio {
+  color: var(--accent-color);
 }
 
 .portfolio-title {
