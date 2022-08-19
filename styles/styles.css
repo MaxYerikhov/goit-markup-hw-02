@@ -16,7 +16,50 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* header */
+.page-header-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: 344px;
+}
+
+.menu {
+  display: flex;
+  column-gap: 50px;
+}
 
 .logo {
   width: 145px;
@@ -29,6 +72,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   color: var(--accent-color);
+  margin-right: 93px;
 }
 
 .link {
@@ -59,6 +103,10 @@ a {
 
 .current {
   color: var(--accent-color);
+}
+
+.contacts-page {
+  display: flex;
 }
 
 .contacts {
@@ -194,13 +242,13 @@ ul {
 
 footer {
   background: var(--dark-background-color);
+  line-height: 1.71;
 }
 
 .location {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71;
   color: var(--white-font-color);
 }
 
